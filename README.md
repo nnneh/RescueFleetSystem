@@ -67,24 +67,20 @@ This system aims to provide a reliable and efficient web platform for managing a
 
 1.  **Clone the repository:**
 
-    ```bash
-    git clone [repository URL]
-    cd [project directory]
-    ```
+    git clone [https://github.com/nnneh/RescueFleetSystem.git]
+    cd [RescueFleetSystem]
+
 
 2.  **Install backend dependencies:**
 
-    ```bash
-    cd backend
+
+    cd server
     npm install
-    ```
 
 3.  **Install frontend dependencies:**
 
-    ```bash
-    cd frontend
+    cd client
     npm install
-    ```
 
 4.  **Configure environment variables:**
     * Create a `.env` file in the `backend` directory.
@@ -93,17 +89,13 @@ This system aims to provide a reliable and efficient web platform for managing a
 
 5.  **Start the backend server:**
 
-    ```bash
-    cd backend
+    cd server
     npm start
-    ```
 
 6.  **Start the frontend application:**
 
-    ```bash
-    cd frontend
+    cd client
     npm start
-    ```
 
 ## Usage
 
