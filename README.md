@@ -68,7 +68,7 @@ This system aims to provide a reliable and efficient web platform for managing a
 1.  **Clone the repository:**
 
     git clone [https://github.com/nnneh/RescueFleetSystem.git]
-    cd [RescueFleetSystem]
+    cd [project directory]
 
 
 2.  **Install backend dependencies:**
