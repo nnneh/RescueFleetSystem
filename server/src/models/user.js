@@ -19,7 +19,6 @@ const userSchema = new mongoose.Schema({
   },
   contactNumber: {
     type: String,
-    required: true,
     trim: true,
     validate: {
       validator: function (v) {
@@ -49,7 +48,7 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['user', 'responder', 'admin', 'dispatcher'], // Different roles for the system
+    enum: ['user', 'responder', 'admin','organizer', 'dispatcher'], // Different roles for the system
     default: 'user',
   },
   profilePicture: {

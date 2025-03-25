@@ -8,7 +8,7 @@ const RegisterPage = () => {
   return (
     <div className=" bg-black min-h-screen min-w-full flex justify-center items-center">
       <div className="min-h-[90vh] w-[80%] flex rounded-lg overflow-hidden shadow-black">
-        <div className="h-[90vh] w-1/2 relative text-center text-white transition-transform overflow-hidden bg-gradient-to-t from-blue-900/70 to-transparent flex items-center justify-center">
+        <div className="h-[90vh] w-1/2 relative text-center  transition-transform overflow-hidden bg-gradient-to-t from-blue-900/70 to-transparent flex items-center justify-center">
           <img
             className="object-cover absolute w-full h-full"
             src="auth-3.jpg"
