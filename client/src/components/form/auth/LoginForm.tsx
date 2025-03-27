@@ -3,13 +3,13 @@ import Link from "next/link";
 import { useFormik } from "formik";
 import LoginSchema from "@/schema/LoginSchema";
 import { useState } from "react";
-import ForgetPasswordModel from "./ForgetPasswordModel";
+import ForgetPasswordModel from "../../../components/form/auth/ForgetPasswordModel";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { Button } from "@/component/ui/button";
-import { Input } from "@/component/ui/input";
-import { Label } from "@/component/ui/label";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 
 const LoginForm = () => {
   const router = useRouter();

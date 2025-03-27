@@ -1,5 +1,5 @@
 "use client";
-import LoginForm from "@/component/form/auth/LoginForm";
+import LoginForm from "@/components/form/auth/LoginForm";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -13,8 +13,8 @@ const LoginPage = () => {
         <div className="h-[90vh] w-1/2 relative text-center text-white transition-transform overflow-hidden bg-gradient-to-t from-blue-900/70 to-transparent flex items-center justify-center">
           <img
             className="object-cover absolute w-full h-full"
-            src="auth-3.jpg"
-            alt="auth photo"
+            src="/officialambulancelogo.png"
+            alt="officialambulancelogo photo"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent z-10"></div>
           <div className="px-10 text-2xl 2xl:text-4xl font-semibold italic z-20">
