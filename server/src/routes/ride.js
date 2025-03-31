@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { getRide ,getRideById, createNewRide , updateRideById, deleteRideById} = require("../controllers/riderequest");
+const { getRide ,getRideById, createNewRide , updateRideById, deleteRideById} = require("../controllers/ride");
 
 
 const app = Router();
