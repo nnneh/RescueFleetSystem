@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useFormik } from "formik";
@@ -11,8 +11,10 @@ import RideSchema from "@/schema/RideSchema";
 
 const RideForm = () => {
   const router = useRouter();
+  const [isFindingAmbulance, setIsFindingAmbulance] = useState(false);
 
   const handleCreateRide = async (values: any) => {
+    setIsFindingAmbulance(true);
     try {
       const res = await axios.post("/api/auth/ride", values);
       if (res.status === 200 || res.status === 201) {
@@ -21,6 +23,8 @@ const RideForm = () => {
       }
     } catch (error: any) {
       toast.error(error.response?.data?.msg);
+    } finally {
+      setIsFindingAmbulance(false);
     }
   };
 
@@ -46,6 +50,7 @@ const RideForm = () => {
     },
     validationSchema: RideSchema,
     onSubmit: (values) => {
+      console.log("Form submitted with values:", values);
       handleCreateRide(values);
     },
   });
@@ -343,10 +348,12 @@ const RideForm = () => {
           )}
         </div> */}
       </div>
-
-      <button type="submit" className="w-full bg-red-500 text-white font-semibold py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        Find Ambulance
-      </button>
+      
+       <Button type="submit" className="w-full bg-red-600 hover:bg-red-500 cursor-pointer"
+          disabled={isFindingAmbulance}
+>
+          {isFindingAmbulance ? "Finding Ambulance..." : "Find Ambulance"}
+      </Button>
     </form>
   );
 };

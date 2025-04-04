@@ -32,3 +32,4 @@ module.exports = { getHospital, getHospitalById, createNewHospital, updateHospit
 
 
 
+

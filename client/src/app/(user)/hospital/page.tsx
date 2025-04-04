@@ -12,7 +12,7 @@ const HospitalPage = () => {
           <Image
             onClick={() => router.push("/")}
             className="cursor-pointer mx-auto"
-            src="/.png"
+            src="/hospital logo.jpg"
             alt="Hospital Logo"
             width={100}
             height={100}
@@ -20,7 +20,7 @@ const HospitalPage = () => {
           <h2 className="text-xl font-semibold mt-4 text-gray-800">Hospital</h2>
         </div>
 
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md z-999">
+        <div className="bg-gray-100 p-8 rounded-lg shadow-md">
           <HospitalForm />
         </div>
       </div>

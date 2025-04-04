@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const dbConnect = async ()=>{
-    try{
-        const res = await mongoose.connect('mongodb://127.0.0.1:27017/rescueFleetDB');
-        // console.log(res)
-        if (res) console.log('db connection successfull')
-    } catch(err){
-        console.log(err)
+const dbConnect  = async ()=>{
+    try {
+        const res = await mongoose.connect(process.env.MONGODB_CONNECTION_URI);
+        if(res) console.log("db connection successfull")
+    }catch(err){
+        console.error(err)
     }
-   
 }
 
-module.exports = dbConnect;
+module.exports = dbConnect

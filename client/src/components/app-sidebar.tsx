@@ -10,7 +10,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
   } from "@/components/ui/sidebar"
-import { AmbulanceIcon, Home, Hospital } from "lucide-react"
+import { AmbulanceIcon, BellIcon, HelpCircleIcon, HistoryIcon, Home, Hospital, SettingsIcon } from "lucide-react"
 import Link from "next/link"
   const items = [
     {
@@ -27,6 +27,26 @@ import Link from "next/link"
       title: "Hospital",
       url: "/hospital",
       icon: Hospital,
+    },
+    {
+      title: "RequestHistory",
+      url: "/requesthistory",
+      icon: HistoryIcon,
+    },
+    {
+      title: "Notifications",
+      url: "/notifications",
+      icon: BellIcon,
+    },
+    {
+      title: "Help",
+      url: "/help",
+      icon: HelpCircleIcon,
+    },
+    {
+      title: "Settings",
+      url: "/settings",
+      icon: SettingsIcon,
     },
     
   ]

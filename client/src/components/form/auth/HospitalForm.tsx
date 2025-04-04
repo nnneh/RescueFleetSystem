@@ -55,7 +55,7 @@ const HospitalForm = () => {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
+    <form onSubmit={formik.handleSubmit} className="max-w-lg mx-auto mt-8 p-8 bg-white rounded-md shadow-md space-y-4">
       <h2 className="text-xl font-semibold mb-4 text-gray-800">Add New Hospital</h2>
 
       <div className="grid gap-4 mb-4">
@@ -123,7 +123,7 @@ const HospitalForm = () => {
           )}
         </div>
 
-        <div>
+        {/* <div>
           <Label htmlFor="address.postalCode" className="text-gray-700">Postal Code</Label>
           <Input
             type="text"
@@ -137,9 +137,9 @@ const HospitalForm = () => {
           {formik.touched.address?.postalCode && formik.errors.address?.postalCode && (
             <p className="text-red-500 text-sm">{formik.errors.address.postalCode}</p>
           )}
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <Label htmlFor="address.country" className="text-gray-700">Country</Label>
           <Input
             type="text"
@@ -153,7 +153,7 @@ const HospitalForm = () => {
           {formik.touched.address?.country && formik.errors.address?.country && (
             <p className="text-red-500 text-sm">{formik.errors.address.country}</p>
           )}
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-2 gap-4">
           <div>
